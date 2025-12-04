@@ -84,6 +84,7 @@ body {
 .react-facts {
   background-color: #333;
   padding: 60px 30px;
+  color: white;
 }
 
 .react-facts > ul {
