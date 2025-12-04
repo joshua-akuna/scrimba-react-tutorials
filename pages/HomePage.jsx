@@ -14,6 +14,9 @@ export default function HomePage() {
           <li>
             <Link to='/new-react-facts'>React Facts 2</Link>
           </li>
+          <li>
+            <Link to='/travel-journal'>Travel Journal</Link>
+          </li>
         </ul>
       </nav>
       <h1>This is the Home page</h1>
