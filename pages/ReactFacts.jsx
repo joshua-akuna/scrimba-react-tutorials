@@ -4,8 +4,13 @@ export default function ReactFacts() {
 
 function Header() {
   return (
-    <header>
-      <img src='react-logo.svg' alt='react logo' width='40px' />
+    <header className='header'>
+      <img className='nav-logo' src='react-logo.svg' alt='react logo' />
+      <ul className='nav-list'>
+        <li>Pricing</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
     </header>
   );
 }
