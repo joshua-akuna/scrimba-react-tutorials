@@ -1,18 +1,22 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-export default function HomePage(){
-
-    return (
-        <div>
-            <nav>
-                <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/react-facts">React Facts</Link></li>
-                </ul>
-            </nav>
-            <h1>
-                This is the Home page
-            </h1>
-        </div>
-    )
+export default function HomePage() {
+  return (
+    <div>
+      <nav>
+        <ul>
+          <li>
+            <Link to='/'>Home</Link>
+          </li>
+          <li>
+            <Link to='/react-facts'>React Facts 1</Link>
+          </li>
+          <li>
+            <Link to='/new-react-facts'>React Facts 2</Link>
+          </li>
+        </ul>
+      </nav>
+      <h1>This is the Home page</h1>
+    </div>
+  );
 }
