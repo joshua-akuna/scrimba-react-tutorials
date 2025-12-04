@@ -4,22 +4,14 @@
   margin: 0;
 }
 
-.react-facts, .react {
+body {
+  font-family: sans-serif;
+}
+
+.react {
   background-color: #222;
   color: white;
   height: 100vh;
-}
-
-.react-facts > h1 {
-  padding: 20px 40px 0px;
-}
-
-.react-facts > ul {
-  padding: 20px 80px;
-}
-
-.react-logo{
-  background-color: white;
 }
 
 .facts{
@@ -66,4 +58,43 @@
 
 .nav-logo{
   width: 55px;
+}
+
+.header-container > nav {
+  background-color: #222;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  height: 90px;
+  color: #00d8ff;
+  padding: 0 50px;
+}
+
+.header-container > nav > span {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.header-container > nav > img{
+  width: 55px;
+}
+
+.react-facts {
+  background-color: #333;
+  padding: 60px 30px;
+}
+
+.react-facts > ul {
+  margin: 30px 50px;
+}
+
+.react-facts > ul > li {
+  padding-block: 10px;
+}
+
+.react-facts > ul > li::marker {
+  color: #61DAFB;
+  font-size: 1.5rem;
 }
