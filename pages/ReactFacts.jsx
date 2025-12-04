@@ -1,43 +1,14 @@
+import Header from '../components/Header';
+import MainContent from '../components/MainContent';
+import Footer from '../components/Footer';
+
 export default function ReactFacts() {
-  return <Page />;
-}
-
-function Header() {
   return (
-    <header className='header'>
-      <img className='nav-logo' src='react-logo.svg' alt='react logo' />
-      <ul className='nav-list'>
-        <li>Pricing</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-    </header>
-  );
-}
-
-function MainContent() {
-  return (
-    <main>
-      <h1>Reason I am excited to learn React</h1>
-      <ol className>
-        <li>
-          React is a popular library, so I will be more likely to fit in with
-          all the coolest devs out there!
-        </li>
-        <li>
-          I am more likely to get a job as a front end developer if I know
-          react.
-        </li>
-      </ol>
-    </main>
-  );
-}
-
-function Footer() {
-  return (
-    <footer>
-      <small>&copy; 2024 ziroll development. All rights reserved</small>
-    </footer>
+    <div className='facts'>
+      <Header />
+      <MainContent />
+      <Footer />
+    </div>
   );
 }
 
@@ -54,15 +25,5 @@ function TemporaryName() {
         <li>Powers thousands of enterprise apps, including mobile apps</li>
       </ul>
     </main>
-  );
-}
-
-function Page() {
-  return (
-    <div className='facts'>
-      <Header />
-      <MainContent />
-      <Footer />
-    </div>
   );
 }
