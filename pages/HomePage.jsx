@@ -17,6 +17,9 @@ export default function HomePage() {
           <li>
             <Link to='/travel-journal'>Travel Journal</Link>
           </li>
+          <li>
+            <Link to='/props'>Props Tutorial</Link>
+          </li>
         </ul>
       </nav>
       <h1>This is the Home page</h1>

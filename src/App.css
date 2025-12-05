@@ -99,3 +99,26 @@ body {
   color: #61DAFB;
   font-size: 1.5rem;
 }
+
+.globe-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fefefe;
+  color: rgb(41, 99, 146);
+  gap: 7px;
+  height: 55px;
+}
+
+.globe-header > img {
+  width: 30px;
+}
+
+.globe-header > h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+article.jounal-entry {
+  display: flex;
+}

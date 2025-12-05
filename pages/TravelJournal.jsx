@@ -1,3 +1,11 @@
+import Header from '../components/GlobeHeader';
+import Entry from '../components/Entry';
+
 export default function Journal() {
-  return <h1>Travel Journal page</h1>;
+  return (
+    <>
+      <Header />
+      <Entry />
+    </>
+  );
 }
