@@ -1,9 +1,15 @@
 import Joke from '../components/Joke';
+import jokeData from '../data/jokeData';
 
 export default function Jokes() {
-  return (
-    <main>
-      <Joke punchline="It's hard to explain puns to kleptomaniac because they take things literally" />
+  const JokeElement = jokeData.map(function (joke) {
+    return <Joke setup={joke.setup} punchline={joke.punchline} />;
+  });
+
+  return <main>{JokeElement}</main>;
+}
+
+/* <Joke punchline="It's hard to explain puns to kleptomaniac because they take things literally" />
       <Joke
         setup='How did the hacker escape the police.'
         punchline='He just ransomware!'
@@ -19,7 +25,4 @@ export default function Jokes() {
       <Joke
         setup="What's the best thing about Switzerland?"
         punchline="I don't know, but the flag is a big plus!"
-      />
-    </main>
-  );
-}
+      /> */
