@@ -1,14 +1,22 @@
-export default function Entry() {
+import { FaLocationDot } from 'react-icons/fa6';
+
+export default function Entry(props) {
+  console.log(props);
+
   return (
-    <article className='journal-entry'>
-      <img
-        src='https://scrimba.com/links/travel-journal-japan-image-url'
-        alt='mount fuji'
-      />
-      <div>
-        <img src='vite.svg' alt='map marker icon' />
-        <span>Japan</span>
-        <a href='http://www.google.com/map/place/'>View on Google Maps</a>
+    <article className='entry-wrapper'>
+      <div className='image-wrapper'>
+        <img src={props.img.src} alt={props.img.alt} />
+      </div>
+      <div className='detail-wrapper'>
+        <div>
+          <FaLocationDot />
+          <span>{props.country}</span>
+          <a href={props.googleMapLink}>View on Google Maps</a>
+        </div>
+        <h2>{props.title}</h2>
+        <p>{props.dates}</p>
+        <p>{props.text}</p>
       </div>
     </article>
   );
