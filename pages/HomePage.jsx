@@ -20,6 +20,9 @@ export default function HomePage() {
           <li>
             <Link to='/props'>Props Tutorial</Link>
           </li>
+          <li>
+            <Link to={'/jokes'}>Jokes</Link>
+          </li>
         </ul>
       </nav>
       <h1>This is the Home page</h1>

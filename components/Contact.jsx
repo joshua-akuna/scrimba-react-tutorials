@@ -1,18 +1,18 @@
 import { FaPhone } from 'react-icons/fa';
 import { MdMail } from 'react-icons/md';
 
-export default function Contact() {
+export default function Contact(props) {
   return (
     <article className='contact-card'>
-      <img src='/images/mr-whiskerson.jpeg' alt='photo of Mr Whiskerson' />
-      <h3>Mr. Whiskerson</h3>
+      <img src={props.img} alt='photo of Mr Whiskerson' />
+      <h3>{props.name}</h3>
       <div className='info-group'>
         <FaPhone className='icon' />
-        <p>(212) 555-1234</p>
+        <p>{props.phone}</p>
       </div>
       <div className='info-group'>
         <MdMail className='icon' />
-        <p>mr.whiskaz@catnap.meow</p>
+        <p>{props.email}</p>
       </div>
     </article>
   );

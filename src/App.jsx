@@ -5,6 +5,7 @@ import ReactFacts1 from '../pages/ReactFacts1';
 import ReactFacts2 from '../pages/ReactFacts2';
 import Journal from '../pages/TravelJournal';
 import Props from '../pages/Props';
+import Jokes from '../pages/Jokes';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/new-react-facts' element={<ReactFacts2 />} />
         <Route path='/travel-journal' element={<Journal />} />
         <Route path='/props' element={<Props />} />
+        <Route path='/jokes' element={<Jokes />} />
       </Routes>
     </Router>
   );
