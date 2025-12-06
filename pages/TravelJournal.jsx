@@ -6,6 +6,7 @@ export default function Journal() {
   const entryElements = journals.map(function (journal) {
     return (
       <Entry
+        id={journal.id}
         img={journal.img}
         title={journal.title}
         country={journal.country}

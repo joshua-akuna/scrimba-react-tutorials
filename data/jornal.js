@@ -26,13 +26,13 @@ export default [
     {
         id: 3,
         img: {
-            src: "https://scrimba.com/links/travel-journal-japan-image-url",
-            alt: 'Mount Fuji'
+            src: "https://scrimba.com/links/travel-journal-norway-image-url",
+            alt: 'Geirangerfjord'
         },
-        title: "Mount Fuji",
-        country: "Japan",
+        title: "Geirangerfjord",
+        country: "Norway",
         googleMapsLink: "http://www.google.com",
-        dates: '12 Jan, 2021 - 24 Jan, 2021',
-        text: 'Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet). Mount Fuji is the single most popular tourist site in Japan, for both japanese and foreign tourists'
+        dates: '01 Oct, 2021 - 18 Nov, 2021',
+        text: 'The Geiranger Fjord is a fjord in the Sunnmere region of the Mare og Ronsdal county, Norway. It is located entirely in the Stranda Municipality'
     }
 ]

@@ -1,8 +1,6 @@
 import { FaLocationDot } from 'react-icons/fa6';
 
 export default function Entry(props) {
-  console.log(props);
-
   return (
     <article className='entry-wrapper'>
       <div className='image-wrapper'>
