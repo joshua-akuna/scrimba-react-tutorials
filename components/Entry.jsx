@@ -12,7 +12,7 @@ export default function Entry(props) {
         <div>
           <FaLocationDot />
           <span>{props.country}</span>
-          <a href={props.googleMapLink}>View on Google Maps</a>
+          <a href={props.googleMapsLink}>View on Google Maps</a>
         </div>
         <h2>{props.title}</h2>
         <p>{props.dates}</p>
