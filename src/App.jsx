@@ -6,6 +6,8 @@ import ReactFacts2 from '../pages/ReactFacts2';
 import Journal from '../pages/TravelJournal';
 import Props from '../pages/Props';
 import Jokes from '../pages/Jokes';
+import Turtles from '../pages/Turtles';
+import { HiH1 } from 'react-icons/hi2';
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
         <Route path='/travel-journal' element={<Journal />} />
         <Route path='/props' element={<Props />} />
         <Route path='/jokes' element={<Jokes />} />
+        <Route path='/turtles' element={<Turtles />} />
       </Routes>
     </Router>
   );
