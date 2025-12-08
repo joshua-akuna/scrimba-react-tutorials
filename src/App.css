@@ -209,3 +209,23 @@ article.entry-wrapper {
 .detail-wrapper > div > a{
   font-size: 12px;
 }
+
+/* Styles for chef claude page and components */
+.claude-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.claude-header > img {
+  width: 45px;
+}
+
+.claude-header > h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
