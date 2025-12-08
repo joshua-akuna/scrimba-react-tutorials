@@ -26,6 +26,9 @@ export default function HomePage() {
           <li>
             <Link to={'/turtles'}>Turtles</Link>
           </li>
+          <li>
+            <Link to={'/claude'}>Chef Claude</Link>
+          </li>
         </ul>
       </nav>
       <h1>This is the Home page</h1>

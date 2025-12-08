@@ -7,7 +7,7 @@ import Journal from '../pages/TravelJournal';
 import Props from '../pages/Props';
 import Jokes from '../pages/Jokes';
 import Turtles from '../pages/Turtles';
-import { HiH1 } from 'react-icons/hi2';
+import Claude from '../pages/ChefClaude';
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
         <Route path='/props' element={<Props />} />
         <Route path='/jokes' element={<Jokes />} />
         <Route path='/turtles' element={<Turtles />} />
+        <Route path='/claude' element={<Claude />} />
       </Routes>
     </Router>
   );
