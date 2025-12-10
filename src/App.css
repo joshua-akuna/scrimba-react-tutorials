@@ -282,3 +282,29 @@ article.entry-wrapper {
 .click-main > button {
   height: 40px;
 }
+
+/* Styles for state page */
+.state-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 100vh;
+  background-color: #222;
+  color: #ccc;
+}
+.state-main > h1{
+  text-align: center;
+}
+
+.state-main > button {
+  width: 100px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: 600;
+  white-space: normal;
+  text-align: center;
+  overflow: hidden;
+}
