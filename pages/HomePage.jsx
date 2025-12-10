@@ -29,6 +29,12 @@ export default function HomePage() {
           <li>
             <Link to={'/claude'}>Chef Claude</Link>
           </li>
+          <li>
+            <Link to={'/click'}>Click Me</Link>
+          </li>
+          <li>
+            <Link to={'/state'}>State Variables</Link>
+          </li>
         </ul>
       </nav>
       <h1>This is the Home page</h1>

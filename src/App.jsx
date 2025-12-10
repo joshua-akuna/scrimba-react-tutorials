@@ -8,6 +8,8 @@ import Props from '../pages/Props';
 import Jokes from '../pages/Jokes';
 import Turtles from '../pages/Turtles';
 import Claude from '../pages/ChefClaude';
+import ClickMe from '../pages/ClickMe';
+import State from '../pages/State';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path='/jokes' element={<Jokes />} />
         <Route path='/turtles' element={<Turtles />} />
         <Route path='/claude' element={<Claude />} />
+        <Route path='/click' element={<ClickMe />} />
+        <Route path='/state' element={<State />} />
       </Routes>
     </Router>
   );
