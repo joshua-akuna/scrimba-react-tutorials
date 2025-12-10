@@ -218,7 +218,7 @@ article.entry-wrapper {
   gap: 10px;
   padding: 15px;
   border-bottom: 1px solid #eee;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 6px 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .claude-header > img {
@@ -228,4 +228,38 @@ article.entry-wrapper {
 .claude-header > h1 {
   font-size: 30px;
   font-weight: 600;
+}
+
+.claude-main {
+  padding: 60px 40px;
+}
+
+.claude-main > form {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  height: 40px;
+}
+
+.claude-main > form > input {
+  flex-grow: 1;
+  min-width: 150px;
+  max-width: 400px;
+  padding: 5px 20px;  
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.claude-main > form > button {
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #222;
+  color: #eee;
+}
+
+.claude-main > form > button::before{
+  content: "+";
+  margin-right: 5px;
 }

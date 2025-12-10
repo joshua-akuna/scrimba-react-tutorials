@@ -1,3 +1,16 @@
 export default function ClaudeMain() {
-  return <h1>Inside Cluade Main</h1>;
+  return (
+    <main className='claude-main'>
+      <form action=''>
+        <input
+          type='text'
+          name=''
+          id=''
+          placeholder='e.g. Oregano'
+          aria-label='Add Ingredient'
+        />
+        <button>Add Ingedient</button>
+      </form>
+    </main>
+  );
 }
