@@ -11,6 +11,7 @@ import Claude from '../pages/ChefClaude';
 import ClickMe from '../pages/ClickMe';
 import State from '../pages/State';
 import Counter from '../pages/Counter';
+import Ternary from '../pages/Ternary';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path='/click' element={<ClickMe />} />
         <Route path='/state' element={<State />} />
         <Route path='/count' element={<Counter />} />
+        <Route path='/ternary' element={<Ternary />} />
       </Routes>
     </Router>
   );

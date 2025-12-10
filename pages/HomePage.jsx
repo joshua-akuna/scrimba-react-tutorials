@@ -38,6 +38,9 @@ export default function HomePage() {
           <li>
             <Link to={'/count'}>See Counter</Link>
           </li>
+          <li>
+            <Link to={'/ternary'}>Ternary Page</Link>
+          </li>
         </ul>
       </nav>
       <h1>This is the Home page</h1>

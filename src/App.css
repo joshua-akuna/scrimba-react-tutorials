@@ -283,7 +283,7 @@ article.entry-wrapper {
   height: 40px;
 }
 
-/* Styles for state page */
+/* Styles for State and Ternary pages */
 .state-main {
   display: flex;
   flex-direction: column;
@@ -309,7 +309,7 @@ article.entry-wrapper {
   overflow: hidden;
 }
 
-/* Styles for counter */
+/* Styles for Counter page*/
 main.counter-wrapper {
   background-color: #1e1e1e;
   height: 100vh;
