@@ -10,6 +10,7 @@ import Turtles from '../pages/Turtles';
 import Claude from '../pages/ChefClaude';
 import ClickMe from '../pages/ClickMe';
 import State from '../pages/State';
+import Counter from '../pages/Counter';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path='/claude' element={<Claude />} />
         <Route path='/click' element={<ClickMe />} />
         <Route path='/state' element={<State />} />
+        <Route path='/count' element={<Counter />} />
       </Routes>
     </Router>
   );

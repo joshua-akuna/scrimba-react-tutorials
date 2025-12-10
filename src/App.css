@@ -308,3 +308,59 @@ article.entry-wrapper {
   text-align: center;
   overflow: hidden;
 }
+
+/* Styles for counter */
+main.counter-wrapper {
+  background-color: #1e1e1e;
+  height: 100vh;
+}
+
+main.counter-wrapper > h1 {
+  text-align: center;
+  color: #fefefe;
+}
+
+div.counter {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  align-items: center;
+}
+
+button.plus, button.minus {
+  width: 50px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: #777;
+  color: white;
+  border: none;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 70px;
+}
+
+button.plus:hover, button.minus:hover {
+  background-color: #353535;
+}
+
+button.plus {
+  position: relative;
+  right: 20px
+}
+
+button.minus {
+  position: relative;
+  left: 20px;
+}
+
+h2.count {
+  width: 100px;
+  aspect-ratio: 1/1;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}

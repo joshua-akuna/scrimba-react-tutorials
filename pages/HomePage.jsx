@@ -35,6 +35,9 @@ export default function HomePage() {
           <li>
             <Link to={'/state'}>State Variables</Link>
           </li>
+          <li>
+            <Link to={'/count'}>See Counter</Link>
+          </li>
         </ul>
       </nav>
       <h1>This is the Home page</h1>
