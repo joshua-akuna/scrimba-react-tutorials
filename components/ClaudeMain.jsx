@@ -1,5 +1,7 @@
+import { useState } from 'react';
+
 export default function ClaudeMain() {
-  const ingredients = ['Chicken', 'Oregano', 'Tomatoes'];
+  const [ingredients, setIngredients] = useState([]);
 
   const ingredientListItems = ingredients.map(function (ingredient) {
     return <li key={ingredient}>{ingredient}</li>;
@@ -9,8 +11,9 @@ export default function ClaudeMain() {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
     const newIngredient = formData.get('ingredient');
-    ingredients.push(newIngredient);
-    console.log(ingredients);
+    // ingredients.push(newIngredient);
+    // console.log(ingredients);
+    setIngredients((prevIngredients) => [...prevIngredients, newIngredient]);
   }
 
   return (
