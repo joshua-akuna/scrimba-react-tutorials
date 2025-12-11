@@ -437,3 +437,14 @@ section.form-wrapper > form > button {
   font-size: 1.15rem;
   font-weight: 600;
 }
+
+fieldset.employment-status,
+fieldset.dietary-restrictions {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset.employment-status > label > input[type=radio],
+fieldset.dietary-restrictions > label > input[type=checkbox] {
+  margin: 5px 10px;
+}
