@@ -12,6 +12,7 @@ import ClickMe from '../pages/ClickMe';
 import State from '../pages/State';
 import Counter from '../pages/Counter';
 import Ternary from '../pages/Ternary';
+import ContactCard from '../pages/ContactCard';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path='/state' element={<State />} />
         <Route path='/count' element={<Counter />} />
         <Route path='/ternary' element={<Ternary />} />
+        <Route path='/card' element={<ContactCard />} />
       </Routes>
     </Router>
   );

@@ -41,6 +41,9 @@ export default function HomePage() {
           <li>
             <Link to={'/ternary'}>Ternary Page</Link>
           </li>
+          <li>
+            <Link to={'/card'}>Contact Card</Link>
+          </li>
         </ul>
       </nav>
       <h1>This is the Home page</h1>

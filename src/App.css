@@ -364,3 +364,45 @@ h2.count {
   align-items: center;
   border-radius: 50%;
 }
+
+/* Styles for ContactCard page */
+.card {
+  width: 300px;
+  overflow: hidden;
+  margin-inline: auto;
+  background-color: white;
+  padding: 5px 10px 35px;
+}
+
+.card > img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.card > .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.card > .info > button {
+  background: transparent;
+  border: none;
+}
+
+.cards {
+  background-color: rgb(12, 65, 65);
+  padding: 30px;
+  height: 100vh;
+}
+
+.empty-star, .filled-star {
+  font-size: 30px;
+}
+
+.filled-star {
+  color: #ffd700;
+}
