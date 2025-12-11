@@ -406,3 +406,34 @@ h2.count {
 .filled-star {
   color: #ffd700;
 }
+
+/* Styles for Form page */
+section.form-wrapper {
+  background-color: #00d8ff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+section.form-wrapper > form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  justify-content: center;
+}
+
+section.form-wrapper > form > input, 
+section.form-wrapper > form > button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+section.form-wrapper > form > button {
+  font-size: 1.15rem;
+  font-weight: 600;
+}

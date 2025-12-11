@@ -44,6 +44,9 @@ export default function HomePage() {
           <li>
             <Link to={'/card'}>Contact Card</Link>
           </li>
+          <li>
+            <Link to={'/form'}>Form</Link>
+          </li>
         </ul>
       </nav>
       <h1>This is the Home page</h1>

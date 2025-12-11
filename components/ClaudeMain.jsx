@@ -9,11 +9,18 @@ export default function ClaudeMain() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    const formData = new FormData(event.currentTarget);
+    // get the form elements
+    const formEl = event.currentTarget;
+    // create a new FormData
+    const formData = new FormData(formEl);
+    // get the data from an input field
     const newIngredient = formData.get('ingredient');
     // ingredients.push(newIngredient);
     // console.log(ingredients);
+    // update the ingredient state
     setIngredients((prevIngredients) => [...prevIngredients, newIngredient]);
+    // reset input fiels
+    formEl.reset();
   }
 
   return (

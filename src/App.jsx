@@ -13,6 +13,7 @@ import State from '../pages/State';
 import Counter from '../pages/Counter';
 import Ternary from '../pages/Ternary';
 import ContactCard from '../pages/ContactCard';
+import FormPage from '../pages/Form';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path='/count' element={<Counter />} />
         <Route path='/ternary' element={<Ternary />} />
         <Route path='/card' element={<ContactCard />} />
+        <Route path='/form' element={<FormPage />} />
       </Routes>
     </Router>
   );
