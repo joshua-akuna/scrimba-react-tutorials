@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 export default function Messages() {
-  const [unreadMessages, setUnreadMessages] = useState([]);
+  const [unreadMessages, setUnreadMessages] = useState(['a', 'b']);
 
   let prompt =
     unreadMessages.length == 0
