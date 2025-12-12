@@ -3,10 +3,12 @@ import jokeData from '../data/jokeData';
 
 export default function Jokes() {
   const JokeElement = jokeData.map(function (joke) {
-    return <Joke setup={joke.setup} punchline={joke.punchline} />;
+    return (
+      <Joke key={joke.setup} setup={joke.setup} punchline={joke.punchline} />
+    );
   });
 
-  return <main>{JokeElement}</main>;
+  return <main className='jokes-container'>{JokeElement}</main>;
 }
 
 /* <Joke punchline="It's hard to explain puns to kleptomaniac because they take things literally" />
