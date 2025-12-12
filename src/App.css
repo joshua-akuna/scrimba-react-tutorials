@@ -244,7 +244,7 @@ article.entry-wrapper {
   font-size: 12px;
 }
 
-/* Styles for chef claude page and components */
+/* Styles for ChefClaude page, ClaudeHeader and ClaudeMain components */
 .claude-header {
   display: flex;
   justify-content: center;
@@ -299,6 +299,42 @@ article.entry-wrapper {
 .claude-main > form > button::before{
   content: "+";
   margin-right: 5px;
+}
+
+section.ingredients-container > h2 {
+  margin: 15px 0 25px;
+}
+
+section.ingredients-container > ul {
+  margin: 0 40px 25px;
+}
+
+section.ingredients-container > ul > li {
+  padding-block: 5px;
+}
+
+div.get-recipe-container {
+  background-color: #e2e2e2;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.get-recipe-container > div > h3 {
+  margin-bottom: 13px;
+}
+
+div.get-recipe-container > button {
+  padding: 3px 7px;
+  color: #fff;
+  background-color: #bb5425;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 7px;
+  z-index: 1000;
+  box-shadow: 6px 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Styles for Joke page and Jokes component */
