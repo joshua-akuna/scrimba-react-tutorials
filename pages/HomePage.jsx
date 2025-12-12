@@ -2,49 +2,49 @@ import { Link } from 'react-router-dom';
 
 export default function HomePage() {
   return (
-    <div>
+    <div className='nav-wrapper'>
       <nav>
-        <ul>
-          <li>
+        <ul className='pages'>
+          <li className='page'>
             <Link to={'/'}>Home</Link>
           </li>
-          <li>
+          <li className='page'>
             <Link to={'/react-facts'}>React Facts 1</Link>
           </li>
-          <li>
+          <li className='page'>
             <Link to={'/new-react-facts'}>React Facts 2</Link>
           </li>
-          <li>
+          <li className='page'>
             <Link to={'/travel-journal'}>Travel Journal</Link>
           </li>
-          <li>
+          <li className='page'>
             <Link to={'/props'}>Props Tutorial</Link>
           </li>
-          <li>
+          <li className='page'>
             <Link to={'/jokes'}>Jokes</Link>
           </li>
-          <li>
+          <li className='page'>
             <Link to={'/turtles'}>Turtles</Link>
           </li>
-          <li>
+          <li className='page'>
             <Link to={'/claude'}>Chef Claude</Link>
           </li>
-          <li>
+          <li className='page'>
             <Link to={'/click'}>Click Me</Link>
           </li>
-          <li>
+          <li className='page'>
             <Link to={'/state'}>State Variables</Link>
           </li>
-          <li>
+          <li className='page'>
             <Link to={'/count'}>See Counter</Link>
           </li>
-          <li>
+          <li className='page'>
             <Link to={'/ternary'}>Ternary Page</Link>
           </li>
-          <li>
+          <li className='page'>
             <Link to={'/card'}>Contact Card</Link>
           </li>
-          <li>
+          <li className='page'>
             <Link to={'/form'}>Form</Link>
           </li>
         </ul>
