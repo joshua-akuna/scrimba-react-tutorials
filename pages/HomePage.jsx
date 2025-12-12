@@ -47,6 +47,9 @@ export default function HomePage() {
           <li className='page'>
             <Link to={'/form'}>Form</Link>
           </li>
+          <li className='page'>
+            <Link to={'/messages'}>Messages</Link>
+          </li>
         </ul>
       </nav>
       <h1>This is the Home page</h1>
