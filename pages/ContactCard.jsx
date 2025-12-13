@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Avatar from '../public/images/avatar.png';
-import { FaRegStar, FaStar } from 'react-icons/fa6';
+import Props from './Props';
+import Star from '../components/Star';
 
 export default function ContactCard() {
   const [contact, setContact] = useState({
@@ -10,12 +11,6 @@ export default function ContactCard() {
     email: 'itsmyrealname.example.com',
     isFavorite: false,
   });
-
-  const starIcon = contact.isFavorite ? (
-    <FaStar className='filled-star' />
-  ) : (
-    <FaRegStar className='empty-star' />
-  );
 
   function toggleFavorite() {
     setContact((prevContact) => ({
@@ -30,18 +25,7 @@ export default function ContactCard() {
         <article className='card'>
           <img src={Avatar} alt='' />
           <div className='info'>
-            <button
-              onClick={toggleFavorite}
-              aria-pressed={contact.isFavorite}
-              aria-label={
-                contact.isFavorite
-                  ? 'Remove from favorites'
-                  : 'Add to favorites'
-              }
-            >
-              {starIcon}
-              {/* <FaRegStar className='empty-star' /> */}
-            </button>
+            <Star isFilled={contact.isFavorite} handleClick={toggleFavorite} />
             <h2>
               {contact.firstName} {contact.lastName}
             </h2>
