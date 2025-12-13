@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Recipe from './Recipe';
+import Recipe from './ClaudeRecipe';
 import IngedientList from './IngredientsList';
 
 export default function ClaudeMain() {
