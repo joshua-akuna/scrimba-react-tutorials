@@ -15,6 +15,7 @@ import Ternary from '../pages/Ternary';
 import ContactCard from '../pages/ContactCard';
 import FormPage from '../pages/Form';
 import Messages from '../pages/Messages';
+import Pads from '../pages/Pads';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path='/card' element={<ContactCard />} />
         <Route path='/form' element={<FormPage />} />
         <Route path='/messages' element={<Messages />} />
+        <Route path='/pads' element={<Pads />} />
       </Routes>
     </Router>
   );

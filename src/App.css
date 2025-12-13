@@ -542,3 +542,20 @@ fieldset.employment-status > label > input[type=radio],
 fieldset.dietary-restrictions > label > input[type=checkbox] {
   margin: 5px 10px;
 }
+
+/* styles for Pads page */
+main.pads {
+  padding: 10px;
+  max-width: 700px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+main.pads > button {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border: 2px solid #1e3e1e;
+  border-radius: 10px;
+}

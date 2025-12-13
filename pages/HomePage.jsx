@@ -50,6 +50,9 @@ export default function HomePage() {
           <li className='page'>
             <Link to={'/messages'}>Messages</Link>
           </li>
+          <li className='page'>
+            <Link to={'/pads'}>Pads</Link>
+          </li>
         </ul>
       </nav>
       <h1>This is the Home page</h1>
