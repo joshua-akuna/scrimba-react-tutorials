@@ -543,7 +543,7 @@ fieldset.dietary-restrictions > label > input[type=checkbox] {
   margin: 5px 10px;
 }
 
-/* styles for Pads page */
+/* styles for Pads page and Pad component */
 main.pads {
   padding: 10px;
   max-width: 700px;
@@ -556,6 +556,11 @@ main.pads {
 main.pads > button {
   width: 100%;
   aspect-ratio: 1/1;
-  border: 2px solid #1e3e1e;
+  border: 3px solid #1e3e1e;
   border-radius: 10px;
+  opacity: 0.1;
+}
+
+main.pads > button.on {
+  opacity: 1;
 }
