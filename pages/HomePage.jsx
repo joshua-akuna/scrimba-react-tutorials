@@ -53,6 +53,12 @@ export default function HomePage() {
           <li className='page'>
             <Link to={'/pads'}>Pads</Link>
           </li>
+          <li className='page'>
+            <Link to={'/meme'}>Memes Generator</Link>
+          </li>
+          <li className='page'>
+            <Link to={'/tenzies'}>Tenzies</Link>
+          </li>
         </ul>
       </nav>
       <h1>This is the Home page</h1>

@@ -16,6 +16,8 @@ import ContactCard from '../pages/ContactCard';
 import FormPage from '../pages/Form';
 import Messages from '../pages/Messages';
 import Pads from '../pages/Pads';
+import Meme from '../pages/Meme';
+import Tenzies from '../pages/Tenzies';
 
 function App() {
   return (
@@ -37,6 +39,8 @@ function App() {
         <Route path='/form' element={<FormPage />} />
         <Route path='/messages' element={<Messages />} />
         <Route path='/pads' element={<Pads />} />
+        <Route path='/meme' element={<Meme />} />
+        <Route path='/tenzies' element={<Tenzies />} />
       </Routes>
     </Router>
   );
