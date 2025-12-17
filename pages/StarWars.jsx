@@ -21,6 +21,7 @@ export default function StarWars() {
       .catch((error) => console.error(`Error: ${error}`));
   }, [count]);
 
+  // get an array of memes when the UI loads
   //   useEffect(() => {
   //     console.log('Effect function ran');
   //   }, [count]);
