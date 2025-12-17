@@ -717,7 +717,7 @@ button.die{
   cursor: pointer;
 }
 
-main.tenzies-wrapper > button.roll {
+button.roll {
   background-color: rgb(62, 26, 104);
   color: white;
   border: none;
@@ -730,4 +730,13 @@ main.tenzies-wrapper > button.roll {
   cursor: pointer;
   width: auto;
   white-space: nowrap;
+}
+
+/* styles for starwars page */
+.star-wars {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
 }

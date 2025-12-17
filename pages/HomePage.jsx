@@ -57,6 +57,9 @@ export default function HomePage() {
             <Link to={'/meme'}>Memes Generator</Link>
           </li>
           <li className='page'>
+            <Link to={'/starwars'}>StarWars</Link>
+          </li>
+          <li className='page'>
             <Link to={'/tenzies'}>Tenzies</Link>
           </li>
         </ul>
