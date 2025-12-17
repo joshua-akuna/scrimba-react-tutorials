@@ -60,6 +60,9 @@ export default function HomePage() {
             <Link to={'/starwars'}>StarWars</Link>
           </li>
           <li className='page'>
+            <Link to={'/tracker'}>Window Tracker</Link>
+          </li>
+          <li className='page'>
             <Link to={'/tenzies'}>Tenzies</Link>
           </li>
         </ul>

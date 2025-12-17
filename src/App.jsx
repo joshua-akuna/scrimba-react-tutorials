@@ -19,6 +19,7 @@ import Pads from '../pages/Pads';
 import Meme from '../pages/Meme';
 import StarWars from '../pages/StarWars';
 import Tenzies from '../pages/Tenzies';
+import WindowTracker from '../pages/WindowTracker';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
         <Route path='/pads' element={<Pads />} />
         <Route path='/starwars' element={<StarWars />} />
         <Route path='/meme' element={<Meme />} />
+        <Route path='/tracker' element={<WindowTracker />} />
         <Route path='/tenzies' element={<Tenzies />} />
       </Routes>
     </Router>
