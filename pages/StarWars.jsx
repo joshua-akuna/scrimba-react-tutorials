@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { data } from 'react-router-dom';
 
 export default function StarWars() {
   const [starWarsData, setStarWarsData] = useState({});
