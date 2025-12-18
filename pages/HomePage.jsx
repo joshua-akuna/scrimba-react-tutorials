@@ -26,7 +26,7 @@ export default function HomePage() {
           <li className='page'>
             <Link to={'/turtles'}>Turtles</Link>
           </li>
-          <li className='page'>
+          <li className='page red'>
             <Link to={'/claude'}>Chef Claude</Link>
           </li>
           <li className='page'>
@@ -56,13 +56,13 @@ export default function HomePage() {
           <li className='page'>
             <Link to={'/meme'}>Memes Generator</Link>
           </li>
-          <li className='page'>
+          <li className='page red'>
             <Link to={'/starwars'}>StarWars</Link>
           </li>
           <li className='page'>
             <Link to={'/tracker'}>Window Tracker</Link>
           </li>
-          <li className='page'>
+          <li className='page red'>
             <Link to={'/tenzies'}>Tenzies</Link>
           </li>
         </ul>

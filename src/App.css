@@ -8,6 +8,10 @@ body {
   font-family: sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
 .react {
   background-color: #222;
   color: white;
@@ -126,12 +130,17 @@ li.page > a {
   white-space: nowrap;
   display: block;
   padding: 5px 10px;
+  cursor: pointer;
 }
 
 li.page > a:hover {
   background-color: #eee;
   color: #433;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
+
+li.red a {
+  background-color: red;
 }
 
 /*Styles for contact component and Props page*/
