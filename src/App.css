@@ -12,13 +12,47 @@ button {
   cursor: pointer;
 }
 
-.react {
-  background-color: #222;
-  color: white;
-  height: 100vh;
+/* Styles for the HomePage page */
+div.nav-wrapper {
+  max-width: 700px;
+  margin-inline: auto;
+  padding: 20px 60px;
 }
 
-.facts{
+ul.pages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  list-style: none;
+}
+
+ul.pages > li.page {
+  background-color: #433;
+  border-radius: 5px;
+}
+
+li.page > a {
+  text-decoration: none;
+  color: #fefefe;
+  font-size: 1.1rem;
+  white-space: nowrap;
+  display: block;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+li.page > a:hover {
+  background-color: #eee;
+  color: #433;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
+
+li.red a {
+  background-color: red;
+}
+
+/* styles for React Facts 1 */
+.facts {
   background-color: #222;
   color: white;
   min-height: 100vh;
@@ -64,6 +98,13 @@ button {
   width: 55px;
 }
 
+/* Styles for React Fact 2 */
+.react-facts {
+  background-color: #222;
+  color: white;
+  height: 100vh;
+}
+
 .header-container > nav {
   background-color: #222;
   width: 100%;
@@ -102,45 +143,6 @@ button {
 .react-facts > ul > li::marker {
   color: #61DAFB;
   font-size: 1.5rem;
-}
-
-/* Styles for the HomePage page */
-div.nav-wrapper {
-  max-width: 700px;
-  margin-inline: auto;
-}
-
-ul.pages {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  list-style: none;
-  padding: 20px 60px;
-}
-
-ul.pages > li.page {
-  background-color: #433;
-  border-radius: 5px;
-}
-
-li.page > a {
-  text-decoration: none;
-  color: #fefefe;
-  font-size: 1.1rem;
-  white-space: nowrap;
-  display: block;
-  padding: 5px 10px;
-  cursor: pointer;
-}
-
-li.page > a:hover {
-  background-color: #eee;
-  color: #433;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
-}
-
-li.red a {
-  background-color: red;
 }
 
 /*Styles for contact component and Props page*/
@@ -774,4 +776,11 @@ main.tracker-wrapper > button {
 
 main.tracker-wrapper > h1 {
   color: white;
+}
+
+
+@media screen and (max-width: 600px) {
+  ul.pages {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

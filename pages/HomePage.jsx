@@ -67,7 +67,7 @@ export default function HomePage() {
           </li>
         </ul>
       </nav>
-      <h1>This is the Home page</h1>
+      <h1>This is a series of projects dedicated for me to learn React</h1>
     </div>
   );
 }
