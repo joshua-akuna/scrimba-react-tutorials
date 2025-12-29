@@ -47,10 +47,8 @@ li.page > a:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
 }
 
-.red {
-  color: red;
-  display: block;
-  text-align: center;
+li.red a {
+  background-color: red;
 }
 
 /* styles for React Facts 1 */
