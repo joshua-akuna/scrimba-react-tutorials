@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import Recipe from './ClaudeRecipe';
 import IngedientList from './IngredientsList';
-// import { getHFRecipe } from '../src/lib/AIclients';
 import { geminiRecipe } from '../src/lib/AIclients';
-import { ClipLoader } from 'react-spinners';
+import Loader from '/images/Spinner.svg';
 
 export default function ClaudeMain() {
   // state for the array of ingredients
@@ -25,9 +24,11 @@ export default function ClaudeMain() {
     // ingredients.push(newIngredient);
     // console.log(ingredients);
     // update the ingredient state
-    setIngredients(function (prevIngredients) {
-      return [...prevIngredients, newIngredient];
-    });
+    if (newIngredient.trim().length > 0) {
+      setIngredients(function (prevIngredients) {
+        return [...prevIngredients, newIngredient];
+      });
+    }
     // reset input fields
     formEl.reset();
   }
@@ -39,6 +40,14 @@ export default function ClaudeMain() {
     const newRecipe = await geminiRecipe(ingredients);
     setRecipe(newRecipe);
     setIsLoading(false);
+  }
+
+  if (isLoading) {
+    return (
+      <div className='spinner'>
+        <img src={Loader} alt='Spinner for page' />;
+      </div>
+    );
   }
 
   return (
@@ -57,7 +66,7 @@ export default function ClaudeMain() {
         <IngedientList ingredients={ingredients} handleClick={toggleRecipe} />
       )}
       {/* if isLoading is false, display the recipe */}
-      {isLoading == false ? <Recipe recipe={recipe} /> : null}
+      <Recipe recipe={recipe} />
     </main>
   );
 }

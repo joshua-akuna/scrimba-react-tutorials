@@ -52,7 +52,7 @@ export async function getHFRecipe(ingredients) {
 
 import { GoogleGenAI } from '@google/genai';
 const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
-console.log('GEMINI_API_KEY: ', GEMINI_API_KEY);
+// console.log('GEMINI_API_KEY: ', GEMINI_API_KEY);
 
 const ai = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
 
@@ -66,6 +66,6 @@ export async function geminiRecipe(ingredients) {
   } catch (error) {
     // error handling
     console.error('Gemini API Error:', error);
-    return `# 500: Error generating recipe`;
+    return `## 500: Error generating recipe`;
   }
 }
