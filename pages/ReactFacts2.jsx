@@ -1,10 +1,10 @@
 import Main from '../components/Main1';
-import Navbar from '../components/NavBar1';
+import NavBar from '../components/NavBar';
 
 export default function ReactFacts2() {
   return (
     <div className='container'>
-      <Navbar />
+      <NavBar />
       <Main />
     </div>
   );

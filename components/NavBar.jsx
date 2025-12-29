@@ -1,4 +1,4 @@
-export default function Navbar1() {
+export default function NavBars() {
   return (
     <header className='header-container'>
       <nav>
