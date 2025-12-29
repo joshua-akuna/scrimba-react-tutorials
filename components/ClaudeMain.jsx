@@ -20,15 +20,16 @@ export default function ClaudeMain() {
     // create a new FormData
     const formData = new FormData(formEl);
     // get the data from an input field
-    const newIngredient = formData.get('ingredient');
+    const newIngredient = formData.get('ingredient').trim();
     // ingredients.push(newIngredient);
     // console.log(ingredients);
     // update the ingredient state
-    if (newIngredient.trim().length > 0) {
+    if (newIngredient.length > 0 && ingredients.indexOf(newIngredient) === -1) {
       setIngredients(function (prevIngredients) {
-        return [...prevIngredients, newIngredient];
+        return [...prevIngredients, newIngredient.trim()];
       });
     }
+
     // reset input fields
     formEl.reset();
   }
@@ -62,6 +63,7 @@ export default function ClaudeMain() {
         />
         <button>Add Ingedient</button>
       </form>
+      <small className='red'>Please, Enter 4 Ingredients.</small>
       {ingredients.length > 0 && (
         <IngedientList ingredients={ingredients} handleClick={toggleRecipe} />
       )}

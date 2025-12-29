@@ -288,6 +288,7 @@ article.entry-wrapper {
 
 .claude-main > form {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   gap: 12px;
   height: 40px;
@@ -322,8 +323,13 @@ article.entry-wrapper {
   margin-right: 5px;
 }
 
+.red {
+  color: red;
+  font-weight: 400;
+}
+
 section.ingredients-container > h2 {
-  margin: 15px 0 25px;
+  margin: 15px 0 15px;
 }
 
 section.ingredients-container > ul {
@@ -402,6 +408,18 @@ div.get-recipe-container > button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 430px) {
+  .claude-main > form {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .claude-main > form > input,
+  .claude-main > form > button {
+    padding: 10px 20px;
+  }
 }
 
 /* Styles for Joke page and Jokes component */
