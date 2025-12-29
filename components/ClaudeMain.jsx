@@ -45,7 +45,7 @@ export default function ClaudeMain() {
   if (isLoading) {
     return (
       <div className='spinner'>
-        <img src={Loader} alt='Spinner for page' />;
+        <img src={Loader} alt='Spinner for page' />
       </div>
     );
   }
