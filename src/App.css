@@ -264,8 +264,11 @@ article.entry-wrapper {
   padding: 15px;
   border-bottom: 1px solid #eee;
   box-shadow: 6px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: linear-gradient(120deg, rgb(15, 32, 39, 0.3), rgb(32, 58, 67, 0.3), rgb(44, 83, 100, 0.3)), url('/images/anna-pelzer-unsplash.jpg');
+  background-position: center;
+  text-shadow: 2px 2px 6px #000;
 }
-
+/* */
 .claude-header > img {
   width: 45px;
 }
@@ -273,6 +276,8 @@ article.entry-wrapper {
 .claude-header > h1 {
   font-size: 30px;
   font-weight: 600;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25s);
 }
 
 .claude-main {
@@ -302,9 +307,14 @@ article.entry-wrapper {
   border-radius: 5px;
   padding: 5px 10px;
   border: none;
-  background-color: #222;
+  background-color: #0F2027;
   color: #eee;
   font-weight: 600;
+  transition: all 0.5s;
+}
+
+.claude-main > form > button:hover {
+  background: #2C5364;
 }
 
 .claude-main > form > button::before{
@@ -317,7 +327,7 @@ section.ingredients-container > h2 {
 }
 
 section.ingredients-container > ul {
-  margin: 0 40px 25px;
+  margin: 0 25px 15px;
 }
 
 section.ingredients-container > ul > li {
@@ -337,15 +347,51 @@ div.get-recipe-container > div > h3 {
 }
 
 div.get-recipe-container > button {
-  padding: 3px 7px;
+  padding: 10px 12px;
   color: #fff;
-  background-color: #bb5425;
+  background-color: #0F2027;
   font-size: 15px;
   font-weight: 600;
   border: none;
   border-radius: 7px;
   z-index: 1000;
   box-shadow: 6px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.5s;
+}
+
+div.get-recipe-container > button:hover {
+  background-color: #2C5364;
+}
+
+.recipe-container {
+  color: #262626;
+}
+
+.recipe-container h1 {
+  margin: 40px 0 20px;
+}
+
+.recipe-container h2 {
+  margin: 20px 0;
+}
+
+.recipe-container h3,
+.recipe-container h4 {
+  margin: 20px 0 15px;
+}
+
+.recipe-container ul,
+.recipe-container ol {
+  margin: 0 25px;
+}
+
+.recipe-container ul li, 
+.recipe-container ol li {
+  padding-block: 10px 0;
+}
+
+.recipe-container ol li {
+  line-height: 1.4em;
 }
 
 /* Styles for Joke page and Jokes component */

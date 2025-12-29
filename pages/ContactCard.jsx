@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Avatar from '../public/images/avatar.png';
+import Avatar from '/images/avatar.png';
 import Props from './Props';
 import Star from '../components/Star';
 

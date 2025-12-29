@@ -1,4 +1,4 @@
-import Icon from '../public/images/ChefClaudeIcon.png';
+import Icon from '/images/ChefClaudeIcon.png';
 
 export default function ClaudeHeader() {
   return (
