@@ -323,7 +323,7 @@ article.entry-wrapper {
   margin-right: 5px;
 }
 
-.red {
+.red.warning {
   color: red;
   font-weight: 400;
 }

@@ -63,7 +63,7 @@ export default function ClaudeMain() {
         />
         <button>Add Ingedient</button>
       </form>
-      <small className='red'>Please, Enter 4 Ingredients.</small>
+      <small className='red warning'>Please, Enter 4 Ingredients.</small>
       {ingredients.length > 0 && (
         <IngedientList ingredients={ingredients} handleClick={toggleRecipe} />
       )}
