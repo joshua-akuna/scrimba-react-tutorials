@@ -268,7 +268,7 @@ article.entry-wrapper {
   background-position: center;
   text-shadow: 2px 2px 6px #000;
 }
-/* */
+
 .claude-header > img {
   width: 45px;
 }
@@ -326,6 +326,8 @@ article.entry-wrapper {
 .red.warning {
   color: red;
   font-weight: 400;
+  display: block;
+  text-align: center;
 }
 
 section.ingredients-container > h2 {
